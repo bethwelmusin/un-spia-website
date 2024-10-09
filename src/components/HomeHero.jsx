@@ -1,18 +1,18 @@
 import React from "react";
-import slider_1 from "../assets/slider_1.jpg";
-import slider_2 from "../assets/slider_2.jpg";
-import slider_3 from "../assets/slider_3.jpg";
+import slider_1 from "../assets/Landing 1.png";
+import slider_2 from "../assets/Landing 2.png";
+import slider_3 from "../assets/Landing 3.png";
 import HeroAll from "./HeroAll";
 
 const HomeHero = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     fade: true,
     arrows: false,
   };
@@ -25,8 +25,8 @@ const HomeHero = () => {
         settings={settings}
         images={images}
         height="h-screen"
-        heading_1="Transforming Lives with LEAU Foundation"
-        text="Join us in making a difference across the Samburu region."
+        heading_1="Bridging Divides, Building Peace"
+        text="Together for a Peaceful Tomorrow."
       />
     </section>
   );

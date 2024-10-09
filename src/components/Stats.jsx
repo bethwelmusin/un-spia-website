@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const stats = [
   {
     id: "stats-1",
-    value: 1200,
+    value: 12000,
     description: "Lives Changed",
   },
   {
@@ -18,8 +18,8 @@ const stats = [
   },
   {
     id: "stats-4",
-    value: 5000,
-    description: "Donations Received",
+    value: 50,
+    description: "Countries We Are In",
   },
 ];
 
@@ -73,7 +73,7 @@ const Stats = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat, index) => (
             <div key={stat.id} className="bg-gray-100 p-8 rounded-lg shadow-lg">
-              <h4 className="text-5xl font-extrabold text-green-700 mb-4">
+              <h4 className="text-5xl font-extrabold text-yellow-500 mb-4">
                 {stat.description == "Donations Received" ? "$" : ""}
                 {counters[index]}+
               </h4>

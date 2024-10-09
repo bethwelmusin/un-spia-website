@@ -5,7 +5,7 @@ import slider_2 from "../assets/slider_2.jpg";
 import slider_3 from "../assets/slider_3.jpg";
 import ContactDetails from "../components/ContactDetails";
 import ContactFormMap from "../components/ContactFormMap";
-import FAQ from "../components/FAQ";
+// import FAQ from "../components/FAQ";
 import Testimonial from "../components/Testimonial";
 import CTA from "../components/CTA";
 
@@ -38,7 +38,7 @@ const Contact = () => {
       </section>
       <ContactDetails />
       <ContactFormMap />
-      <FAQ />
+      {/* <FAQ /> */}
       <CTA />
       <Testimonial />
     </>

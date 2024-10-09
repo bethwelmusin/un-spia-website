@@ -32,7 +32,7 @@ const DonateForm = () => {
   };
 
   return (
-    <section className="relative py-16 bg-green-100" id="donate">
+    <section className="relative py-16 bg-grey-100" id="donate">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-bold text-gray-800">Support Our Cause</h2>
         <Divider />
@@ -44,28 +44,28 @@ const DonateForm = () => {
 
         <div className="flex justify-center space-x-4 mb-8">
           <button
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:outline-none"
+            className="px-6 py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 focus:outline-none"
             onClick={handleClick}
             data-amount="10"
           >
             $10
           </button>
           <button
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:outline-none"
+            className="px-6 py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 focus:outline-none"
             onClick={handleClick}
             data-amount="25"
           >
             $25
           </button>
           <button
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:outline-none"
+            className="px-6 py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 focus:outline-none"
             onClick={handleClick}
             data-amount="50"
           >
             $50
           </button>
           <button
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:outline-none"
+            className="px-6 py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 focus:outline-none"
             onClick={handleClick}
             data-amount="100"
           >
@@ -92,14 +92,14 @@ const DonateForm = () => {
           onClick={handleSubmit}
           className={`${
             showPopup &&
-            "cursor-not-allowed bg-green-300 hover:bg-green-300 disabled "
-          } px-8 py-4  bg-green-700 text-white text-lg font-bold rounded-lg hover:bg-green-800 focus:outline-none`}
+            "cursor-not-allowed bg-yellow-300 hover:bg-yellow-300 disabled "
+          } px-8 py-4  bg-yellow-500 text-white text-lg font-bold rounded-lg hover:bg-yellow-800 focus:outline-none`}
         >
           Donate Now
         </button>
       </div>
       {showPopup && (
-        <div className="absolute duration-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-96 max-w-96 shadow-2xl rounded z-50 bg-yellow-600 p-8 flex flex-col justify-center items-center gap-8">
+        <div className="absolute duration-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-96 max-w-96 shadow-2xl rounded z-50 bg-gray-100 p-8 flex flex-col justify-center items-center gap-8">
           <FaTimes
             color="#000"
             size={27}
@@ -112,7 +112,7 @@ const DonateForm = () => {
 
           <button
             onClick={handlePopup}
-            className="px-8 py-4 bg-green-700 text-white text-lg font-bold rounded-lg hover:bg-green-800 focus:outline-none"
+            className="px-8 py-4 bg-yellow-500 text-white text-lg font-bold rounded-lg hover:bg-yellow-500 focus:outline-none"
           >
             Donate Again
           </button>

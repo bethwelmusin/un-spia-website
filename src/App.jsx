@@ -6,6 +6,14 @@ import Stats from "./components/Stats";
 import Testimonial from "./components/Testimonial";
 import "./App.css";
 import Footer from "./components/Footer";
+import {
+  
+  Routes,
+  Route,
+  
+} from 'react-router-dom';
+import About from "./pages/About";
+
 
 const App = () => {
   return (
@@ -16,6 +24,14 @@ const App = () => {
       <Stats />
       <Blog />
       <Testimonial />
+      
+{/* 
+    <Routes>
+      <Route path="/about-us" element={<About  />} />
+   
+     
+    </Routes> */}
+
     </>
   );
 };

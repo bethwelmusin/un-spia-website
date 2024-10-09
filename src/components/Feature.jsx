@@ -1,24 +1,48 @@
 import { FaHandsHelping, FaLeaf, FaUsers } from "react-icons/fa";
+import { GiBoltBomb } from 'react-icons/gi';
+import { GiTreeBranch } from 'react-icons/gi';
+import { FaHandPeace } from 'react-icons/fa';
+import { GiSportMedal } from 'react-icons/gi';
+
 const Feature = () => {
   const features = [
     {
-      icon: <FaHandsHelping className="text-5xl text-green-700 mb-4" />,
-      title: "Community Support",
+      icon: <GiBoltBomb className="text-5xl text-yellow-500 mb-4" />,
+      title: "UN-SPIA Mines",
       description:
-        "Empowering local communities through education, healthcare, and livelihood programs.",
+        "Assistance to disarmament, to mine-clearing, to eliminate small arms, under ammunition, anti-personnel weapons and to pyrotechnic remediation.",
     },
     {
-      icon: <FaLeaf className="text-5xl text-green-700 mb-4" />,
-      title: "Environmental Sustainability",
+      icon: <GiTreeBranch className="text-5xl text-yellow-500 mb-4" />,
+      title: "Environmental Program",
       description:
-        "Promoting sustainable practices and conservation efforts to protect the environment.",
+        "Implementation of a security management dynamic on the island of Sazani, Albania’s military base.Mr André Martinez-Humayou is the director of this program. He forms on the techniques of development and security of natural sites.",
     },
     {
-      icon: <FaUsers className="text-5xl text-green-700 mb-4" />,
-      title: "Volunteer Network",
+      icon: <FaHandPeace className="text-5xl text-yellow-500 mb-4" />,
+      title: "Academy Of Peace",
       description:
-        "Join our global network of volunteers dedicated to creating lasting change in underserved areas.",
+        "The Academy of the Peace proposes formations, theoretical and practical courses on the Peacekeeping, security and peace culture. It hosts humanitarian actors, former military, diplomats, and jurists. It aspires to be a practical and effective link on the field.",
     },
+    {
+      icon: <FaUsers className="text-5xl text-yellow-500 mb-4" />,
+      title: "International Young Peacemakers Program",
+      description:
+        "In partnership with scholar establishments, this program relates to children interested in peace or wishing to do good around them by citizenship and peace actions. It lasts a year, but is renewable on 3 years.",
+    },
+    {
+      icon: <GiSportMedal className="text-5xl text-yellow-500 mb-4" />,
+      title: "Sport and health for the promotion of peace program",
+      description:
+        "Promote peace by the practice of sport. It allows to create a spirit of collaboration around a same ambition and to learn individual and collective values: courage, honor, respect and fairplay. Diplomas and medals are attributed to the students to congratulate them on their actions",
+    },
+    {
+      icon: <FaUsers className="text-5xl text-yellow-500 mb-4" />,
+      title: "UN-SPIA Humanitarian and development",
+      description:
+        "Act in favor of the disinherited populations - Act in the field of emergency and development - Contribute to humanitarian actions and peace.",
+    },
+    
   ];
 
   return (

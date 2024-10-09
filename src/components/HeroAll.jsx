@@ -15,11 +15,11 @@ const HeroAll = ({ settings, images, height, heading_1, text }) => {
             }}
           >
             <div
-              className={`${height} bg-black bg-opacity-50 flex items-center justify-center`}
+              className={`${height} bg-black bg-opacity-10 flex items-center justify-center`}
             >
               <div className="text-center text-white px-4">
-                <h1 className="text-4xl md:text-5xl font-bold">{heading_1}</h1>
-                <p className="mt-4 text-lg md:text-2xl">{text}</p>
+                <h1 className="text-md md:text-md font-bold">{heading_1}</h1>
+                <p className="mt-4 text-sm md:text-xs">{text}</p>
                 <Link
                   to="/donate#donate"
                   className="mt-8 text-xl inline-block bg-yellow-500 text-black px-6 py-3 rounded-lg hover:bg-yellow-600"

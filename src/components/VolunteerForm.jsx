@@ -124,7 +124,7 @@ const VolunteerForm = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="px-8 py-4 bg-green-700 text-white text-lg font-bold rounded-lg hover:bg-green-800 focus:outline-none"
+                  className="px-8 py-4 bg-yellow-500 text-white text-lg font-bold rounded-lg hover:bg-green-800 focus:outline-none"
                 >
                   Submit Application
                 </button>

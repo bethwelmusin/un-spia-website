@@ -5,7 +5,6 @@ import slider_1 from "../assets/slider_1.jpg";
 import slider_2 from "../assets/slider_2.jpg";
 import slider_3 from "../assets/slider_3.jpg";
 import DonateForm from "../components/DonateForm";
-import FAQ from "../components/FAQ";
 
 const Donate = () => {
   const { hash } = useLocation(); // Get the current hash in the URL
@@ -44,7 +43,6 @@ const Donate = () => {
         />
       </section>
       <DonateForm />
-      <FAQ />
     </>
   );
 };

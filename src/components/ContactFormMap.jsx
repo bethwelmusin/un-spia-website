@@ -100,7 +100,7 @@ const ContactFormMap = () => {
                   </div>
                   <button
                     type="submit"
-                    className="w-full py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition-colors"
+                    className="w-full py-3 bg-yellow-500 text-white font-bold rounded-lg hover:bg-green-700 transition-colors"
                   >
                     Send Message
                   </button>
@@ -112,9 +112,9 @@ const ContactFormMap = () => {
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.723102128514!2d36.821946!3d-1.292065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183836d5b2f58f89%3A0x90d3b6c42b49e9a4!2sNairobi!5e0!3m2!1sen!2ske!4v1636736566977!5m2!1sen!2ske"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.319328049467!2d36.79915331526956!3d-1.2337806342944303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a3b94da31eb%3A0xf295c5295d337a31!2sRegus%20-%20Nairobi%2C%20Village%20Market!5e0!3m2!1sen!2ske!4v1693382402795!5m2!1sen!2ske"
               width="100%"
-              height="450"
+              height="100%"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
