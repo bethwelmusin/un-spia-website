@@ -23,7 +23,7 @@ const CTA = () => {
 
           <Link
             to="/volunteer#volunteer"
-            className="bg-white text-black border-2 border-white hover:bg-blue-200 hover:border-blue-600 hover:text-white duration-200 px-8 py-4 rounded-lg text-xl font-semibold"
+            className="bg-white text-black border-2 border-white hover:bg-blue-200 hover:border-blue-500 hover:text-white duration-200 px-8 py-4 rounded-lg text-xl font-semibold"
           >
             Become a Volunteer
           </Link>

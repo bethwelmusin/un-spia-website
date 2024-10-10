@@ -32,9 +32,7 @@ const Events = () => {
         />
       </section>
       <Events_Data />
-      <FAQ />
-      <CTA />
-      <Testimonials />
+      
     </>
   );
 };

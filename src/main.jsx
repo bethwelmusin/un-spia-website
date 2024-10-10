@@ -28,6 +28,10 @@ import EnvironmentalClimate from "./components/peace-operations/EnvironmentalCli
 import Greening from "./components/peace-operations/Greening.jsx";
 import LegalBasis from "./components/peace-operations/LegalBasis.jsx";
 import Sdgs from "./components/footer-links/Sdgs.jsx";
+import Events from "./components/footer-links/Events.jsx";
+import Terms from "./components/footer-links/Terms.jsx";
+import PrivacyPolicy from "./components/footer-links/PrivacyPolicy.jsx";
+import FraudAlert from "./components/footer-links/FraudAlert.jsx";
 
 const router = createBrowserRouter([
   {
@@ -78,14 +82,7 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-  // {
-  //   path: "/events",
-  //   element: (
-  //     <Layout>
-  //       <Events />
-  //     </Layout>
-  //   ),
-  // },
+ 
   {
     path: "/donate",
     element: (
@@ -182,6 +179,14 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
+  {
+    path: "/ourpeacekeepers",
+    element: (
+      <Layout>
+        <OurPeacekeepers />
+      </Layout>
+    ),
+  },
 
   {
     path: "/legalbasis",
@@ -224,55 +229,31 @@ const router = createBrowserRouter([
     path: "/events",
     element: (
       <Layout>
-        <Sdgs />
+        <Events />
       </Layout>
     ),
   },
   {
-    path: "/Sdgs",
+    path: "/terms",
     element: (
       <Layout>
-        <Sdgs />
+        <Terms />
       </Layout>
     ),
   },
   {
-    path: "/Sdgs",
+    path: "/privacypolicy",
     element: (
       <Layout>
-        <Sdgs />
+        <PrivacyPolicy />
       </Layout>
     ),
   },
   {
-    path: "/Sdgs",
+    path: "/fraud",
     element: (
       <Layout>
-        <Sdgs />
-      </Layout>
-    ),
-  },
-  {
-    path: "/Sdgs",
-    element: (
-      <Layout>
-        <Sdgs />
-      </Layout>
-    ),
-  },
-  {
-    path: "/Sdgs",
-    element: (
-      <Layout>
-        <Sdgs />
-      </Layout>
-    ),
-  },
-  {
-    path: "/Sdgs",
-    element: (
-      <Layout>
-        <Sdgs />
+        <FraudAlert />
       </Layout>
     ),
   },

@@ -268,7 +268,7 @@ const Header = () => {
                 className="w-20 h-20 sm:w-12 sm:h-12 md:w-20 md:h-20"
               />
             </Link>
-            <h3 className="text-xl font-semibold sm:text-lg md:text-xl">
+            <h3 className="text-xl font-semibold sm:text-sm md:text-lg">
               United Nations-SPIA
             </h3>
           </div>
@@ -447,7 +447,8 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
-              className="text-black focus:outline-none"
+              // className="text-black focus:outline-none"
+              className="flex items-center text-gray-600 hover:text-yellow-500 focus:outline-none"
               onClick={handleMobileMenu}
             >
               <svg
@@ -469,8 +470,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Dropdown Menu */}
-        {showMobileMenu && <NavBar />}
-      </div>
+        {showMobileMenu && <NavBar handleMobileMenu={handleMobileMenu} />}      </div>
     </header>
   );
 };

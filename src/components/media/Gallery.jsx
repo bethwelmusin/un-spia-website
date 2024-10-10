@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import { FaSpinner } from 'react-icons/fa';
 
 const Gallery = () => {
+  const [images, setImages] = useState([]); // State to store fetched images
+  const [loading, setLoading] = useState(true); // State to handle loading spinner
+
+  // Function to fetch images from API
+  const fetchImages = async () => {
+    try {
+      setLoading(true); // Set loading to true before fetching data
+      const response = await fetch('https://api.un-spia.org/api/v1/constants/gallery/'); // Adjust endpoint URL if needed
+      const data = await response.json();
+      setImages(data); // Store fetched images in state
+      setLoading(false); // Set loading to false after data is fetched
+    } catch (error) {
+      console.error('Error fetching images:', error);
+      setLoading(false); // Set loading to false in case of error
+    }
+  };
+
+  // Fetch images on component mount
+  useEffect(() => {
+    fetchImages();
+  }, []);
+
   return (
     <div className="px-4">
       <div className="flex items-center justify-center py-4 md:py-8 flex-wrap">
@@ -10,94 +33,27 @@ const Gallery = () => {
         >
           All Pictures
         </button>
-    
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-            alt=""
-          />
+
+      {loading ? (
+        <div className="flex justify-center items-center">
+          <FaSpinner className="animate-spin text-gray-500 text-4xl" />
         </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-            alt=""
-          />
+      ) : (
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {images.map((image) => (
+            <div key={image.id}>
+              <img
+                // className="h-auto max-w-full rounded-lg"
+                className="w-full h-60 object-contain rounded-lg" 
+                src={image.image}
+                alt={image.title}
+              />
+              <h3 className="text-sm text-center font-sm mt-2">{image.title}</h3>
+            </div>
+          ))}
         </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg"
-            alt=""
-          />
-        </div>
-      </div>
+      )}
     </div>
   );
 };

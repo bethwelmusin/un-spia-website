@@ -1,5 +1,12 @@
 import React from 'react';
-import Logo from "../assets/newlogo.png"
+import Logo from "../assets/newlogo.png";
+import { Link } from 'react-router-dom';
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
+import { HiOutlineDotsHorizontal } from "react-icons/hi";
+
+
+
 
 const Footer = () => {
   return (
@@ -74,9 +81,27 @@ const Footer = () => {
           </img>
           UN Soldiers Of Peace Internation Association
         </h6>
-        <p text-gray-500 text-md>
-        UN-SPIA Is a United Nations Blue Helmets International Affairs Organisation founded on 19th November 1998 and provided with General Consultative Status from the Resolution No. 12-96 (XLIV) adopted by attribution Committee of the United Nations Economic and social Council on 3rd July 1995.The East, South and Central Africa liaison office is situated at Eaton Place, 2nd floor on United Nations Crescent, Off United Nations Avenue Gigiri Nairobi, Kenya.
-        </p>
+        <div className=' '>
+        <p className="mb-4 flex items-center">
+        <FaRegCalendarAlt className="text-white-500 dark:text-white-200 mr-2" />
+        <Link to="/events" className="text-white-500 dark:text-white-200 hover:text-yellow-500">
+          Upcoming Events
+        </Link>
+      </p>
+      <p className="mb-4 flex items-center">
+        <HiOutlineDotsHorizontal className="text-white-500 dark:text-white-200 mr-2" />
+        <Link to="/projects" className="text-white-500 dark:text-white-200 hover:text-yellow-500">
+          Ongoing Projects
+        </Link>
+      </p>
+      <p className="mb-4 flex items-center">
+        <MdOutlineVolunteerActivism className="text-white-500 dark:text-white-200 mr-2" />
+        <Link to="/volunteer" className="text-white-500 dark:text-white-200 hover:text-yellow-500">
+          Become a Volunteer
+        </Link>
+      </p>
+        </div>
+      
       </div>
       <div className="">
         <h6
@@ -84,19 +109,19 @@ const Footer = () => {
           The United Nations Offices
         </h6>
         <p className="mb-4 hover:text-yellow-500">
-        <a href="https://www.un.org/en/"     className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+        <a href="https://www.un.org/en/"   target='blank'    className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
             >United Nations</a>
         </p>
         <p className="mb-4">
-          <a href="https://www.unon.org/" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+          <a href="https://www.unon.org/"  target='blank' className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
             >Unon</a>
         </p>
         <p className="mb-4">
-          <a href="https://www.ungeneva.org/en" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+          <a href="https://www.ungeneva.org/en"  target='blank' className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
             >UN Geneva</a>
         </p>
         <p className="mb-4">
-          <a href="https://www.unvienna.org/" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+          <a href="https://www.unvienna.org/"  target='blank' className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
             >UN Vienna</a>
         </p>
       </div>
@@ -106,40 +131,40 @@ const Footer = () => {
           Popular Links 
         </h6>
         <p className="mb-4">
-          <a href="#!" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500 "
-            >Sustainable Development Goals</a>
+          <Link to="/events" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+            >Upcoming Events</Link>
         </p>
         <p className="mb-4">
-          <a href="#!" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
-            >Upcoming Events</a>
+          <Link  to="/Sdgs" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500 "
+            >Sustainable Development Goals</Link >
         </p>
+        
         <p className="mb-4">
-          <a href="#!" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
-            >Terms Of Use</a
-          >
+          <Link to="/terms" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+            >Terms Of Use</Link>
         </p>
         <p className='mb-4'>
-          <a href="#!" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
-            >Privacy Policy</a>
+          <Link to="/privacypolicy" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+            >Privacy Policy</Link>
         </p>
         <p className='mb-4'>
-          <a href="#!" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
-            >Fraud Alert</a>
+          <Link to="/fraud" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+            >Fraud Alert</Link>
         </p>
         <p className='mb-4'>
-          <a href="#!" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+          <a href="https://childrenandarmedconflict.un.org/" target='blank'  className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
             >Children and Armed Conflicts</a>
         </p>
         <p className='mb-4'>
-          <a href="#!" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+          <a href="https://www.un.org/sexualviolenceinconflict/media/news/"  target='blank' className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
             >Sex Violence In Conflict</a>
         </p>
         <p className='mb-4'>
-          <a href="#!" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+          <a href="https://www.un.org/en/genocide-prevention/" target='blank'  className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
             >Genocide Prevention</a>
         </p>
         <p className='mb-4'>
-          <a href="#!" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
+          <a href="https://conduct.unmissions.org/" target='blank'  className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500"
             >Conduct In Field Missions</a>
         </p>
       </div>

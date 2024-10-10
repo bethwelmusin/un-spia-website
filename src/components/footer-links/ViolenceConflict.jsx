@@ -9,14 +9,18 @@ const Sdgs = () => {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
      {/* Main Content Card */}
      <div className="col-span-2 bg-white shadow-md rounded-lg p-6">
-       <h2 className="text-2xl font-bold text-yellow-500 mb-4">Sustainable Development Goals</h2>
+       <h2 className="text-2xl font-bold mb-4">Sustainable Development Goals</h2>
        <div className="space-y-4">
     
-          <p className='font-bold'>
+          <p>
           What are the Sustainable Development Goals?
           </p>
     
-      
+          <img
+           src={Pic}
+           alt="Placeholder"
+           className="w-full rounded-lg shadow-md"
+         />
     
          <p>The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity.
     
