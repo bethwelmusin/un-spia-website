@@ -1,5 +1,5 @@
 import Divider from "./Divider";
-import { eventsData } from "../assets/data";
+import { eventsData } from "../../assets/data";
 
 const EventCard = ({ event }) => {
   return (

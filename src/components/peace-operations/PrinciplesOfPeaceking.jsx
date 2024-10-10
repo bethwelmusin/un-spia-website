@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from "../../assets/principles.jpg";
-import Img1 from "../../assets/principles.jpg"
+import Img1 from "../../assets/principles1.png"
 
 const PrinciplesOfPeaceking = () => {
   return (
@@ -9,7 +9,7 @@ const PrinciplesOfPeaceking = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Main Content Card */}
         <div className="col-span-2 bg-white shadow-md rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-4">International Day of Peacekeepers</h2>
+          <h2 className="text-2xl font-bold mb-4">Principles of peacekeeping</h2>
           <div className="space-y-4">
           <img
               src={Img}

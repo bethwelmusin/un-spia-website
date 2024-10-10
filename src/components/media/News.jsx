@@ -8,12 +8,10 @@ const Blog = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[510px] text-center lg:mb-4">
-                <span className="mb-2 block text-xl font-semibold text-yellow-500">
-                  Our Blogs
-                </span>
-                <h2 className="mb-1 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                
+                <h3 className="mb-1 text-3xl font-bold text-dark dark:text-yellow-500 sm:text-2xl md:text-[40px]">
                   Our Recent News
-                </h2>
+                </h3>
                 <p className="text-base text-body-color dark:text-dark-6">
                   There are many variations of passages of Lorem Ipsum available
                   but the majority have suffered alteration in some form.

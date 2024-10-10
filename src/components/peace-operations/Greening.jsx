@@ -1,5 +1,5 @@
 import React from 'react';
-import Pic from "../../assets/greening.jpg"
+import Pic from "../../assets/environment.jpg"
 
 const Greening = () => {
   return (
@@ -8,29 +8,29 @@ const Greening = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Main Content Card */}
         <div className="col-span-2 bg-white shadow-md rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-4">Environmental and Climate-Sensitive Approach</h2>
+          <h2 className="text-2xl font-bold mb-4">Greening the blue helmets</h2>
           <div className="space-y-4">
 
-            <p>
-            Environmental degradation, including degradation caused by climate change, armed conflict, or the illegal exploitation of resources, can be a catalyst for violence against civilians. When environmental degradation contributes to violence, UN peacekeeping operations should include environmental and climate security considerations in their assessment and planning, as well as in the implementation of their mandated activities related to protection.
+             <p>
+             This two-year analysis by the United Nations Environment Programme (UNEP) opens a new chapter for the UN in leading by example towards a greener and more equitable world. It is the result of ongoing collaboration between UNEP and the UN Department of Field Support (DFS) and the UN Department of Peacekeeping Operations (DPKO) to increase the consideration given to natural resources and environmental issues in UN peacekeeping efforts. Following violent conflict, a country's natural resources are its primary assets, which can help kick-start economic recovery, employment and livelihoods. Early decisions on how they are used, managed and allocated can have fundamental implications for short-term stability, security and peacebuilding
 
-While several missions have environmental and climate-related language in their mandates, thus far, they have primarily emphasized the reduction of their environmental footprint. Nevertheless, given the number of missions that operate in contexts affected by climate change, the UN Department of Peace Operations (DPO) has signaled its intention to focus more on climate-related security threats, including by joining the Climate Security Mechanism in December 2021. However, peacekeeping operations could take additional steps to better factor environmental and climate-related risks into their planning and activities related to protection.            </p>
-            
-            <img
+
+             </p>
+             <img
               src={Pic}
               alt="Placeholder"
               className="w-full rounded-lg shadow-md"
             />
-            <p>
-            By including environmental and climate-related factors in assessments and planning, UN peacekeeping operations could prevent conflict more effectively, including by identifying potential hot spots for resource-related violence. There are also opportunities for missions to more systematically integrate environmental and climate-related considerations into activities related to protection, including support to environmental peacebuilding and mediation. Moreover, missions could engage with state and non-state actors to reinforce the rules of international humanitarian law pertaining to respect for the natural environment in armed conflict and help strengthen domestic capacity and expertise to promote accountability for protecting the natural environment. Finally, collaboration with UN country teams is vital for missions to address the root causes of environmental degradation that go beyond their mandates, particularly when preparing transition and exit strategies.
+    
+             <p>
+             While 25 percent of UN peacekeeping missions since 1948 have had a direct or indirect mandate to address natural resources, the broader issues surrounding natural resource and environmental management have until now not garnered sufficient attention within the peacekeeping community. This report shows that peacekeeping operations not only have important natural resource implications, as well as significant impacts on the environment, but also that natural resources are often a fundamental aspect of conflict resolution, livelihoods and confidence-building at the local level. It is therefore important that UN peacekeeping missions be given a more systematic mandate to support national authorities in restoring the administration of natural resources like diamonds, gold, oil and timber, in cases where they have fuelled or financed violence, or become militarized.
 
-            </p>
-         
-            <p>
-            While some missions are already engaging in good practices in this regard, these efforts could be more systematic, and missions could continue exploring new approaches. Likewise, at headquarters, while DPO has taken incremental steps to increase its engagement on climate security, these steps should only be the beginning, especially as environmental conditions worsen in the years ahead.
-
-            </p>
-        
+             </p>
+             <p>
+             With more natural resource provisions in peace agreements today, it is also clear that there is a need for the international community and peacekeeping operations in particular to build new capacities and partnerships to be able to support the implementation of these provisions. The report concludes that addressing the risks and opportunities presented by natural resources is often critical to the success of UN peacekeeping efforts and can no longer be seen as distinct from the maintenance of peace and security. At the same time, the report also highlights the positive efforts that have been undertaken to reduce the environmental impacts of UN peacekeeping operations. By adopting creative and transformational practices, technologies and behaviours, peacekeeping missions can curtail energy and water use and waste production, and also generate significant financial savings. The improved health, safety and security of local communities and personnel, self-sufficiency of camps and reduced potential for disputes with local communities are further benefits. The two parts of the report are inherently connected showcasing better environmental practices and minimizing the impacts of peacekeeping operations are necessary prerequisites and form a foundation for engagement and building confidence at the community level.
+             </p>
+           
+       
           </div>
         </div>
 

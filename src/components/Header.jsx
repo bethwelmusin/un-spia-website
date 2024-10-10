@@ -14,7 +14,7 @@ export const NavBar = ({ handleMobileMenu }) => {
             About
           </Link>
           <div className="relative group">
-            <button className="text-gray-600 hover:text-yellow-500 flex items-center">
+            <button className="text-black hover:text-yellow-500 flex items-center">
               Peace Operations
               <svg
                 className="w-4 h-4 ml-1"
@@ -83,25 +83,25 @@ export const NavBar = ({ handleMobileMenu }) => {
                 Principles of peacekeeping
               </Link>
               <Link
-                to="/humanitarian-efforts"
+                to="/ourPeacekeepers"
                 className="block px-4 py-2 text-black hover:bg-yellow-500"
               >
                 Our peacekeepers
               </Link>
               <Link
-                to="/humanitarian-efforts"
+                to="/towards-environmental"
                 className="block px-4 py-2 text-black hover:bg-yellow-500"
               >
                 Environmental and Climate-Sensitive Approach
               </Link>
               <Link
-                to="/humanitarian-efforts"
+                to="/greeningbluehelmets"
                 className="block px-4 py-2 text-black hover:bg-yellow-500"
               >
                 Greening the blue helmets
               </Link>
               <Link
-                to="/humanitarian-efforts"
+                to="/legalbasis"
                 className="block px-4 py-2 text-black hover:bg-yellow-500"
               >
                 Legal Basis
@@ -354,25 +354,25 @@ const Header = () => {
                   Principles of peacekeeping
                 </Link>
                 <Link
-                  to="/humanitarian-efforts"
+                  to="/ourPeacekeepers"
                   className="block px-4 py-2 text-gray-600 hover:bg-yellow-500"
                 >
                   Our peacekeepers
                 </Link>
                 <Link
-                  to="/humanitarian-efforts"
+                  to="/towards-environmental"
                   className="block px-4 py-2 text-gray-600 hover:bg-yellow-500"
                 >
                   Environmental and Climate-Sensitive Approach
                 </Link>
                 <Link
-                  to="/humanitarian-efforts"
+                  to="/greeningbluehelmets"
                   className="block px-4 py-2 text-gray-600 hover:bg-yellow-500"
                 >
                   Greening the blue helmets
                 </Link>
                 <Link
-                  to="/humanitarian-efforts"
+                  to="/legalbasis"
                   className="block px-4 py-2 text-gray-600 hover:bg-yellow-500"
                 >
                   Legal Basis

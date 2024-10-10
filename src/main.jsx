@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Events from "./pages/Events";
+// import Events from "./components/footer-links/Events.jsx";
 import Donate from "./pages/Donate";
 import Volunteer from "./pages/Volunteer";
 import Contact from "./pages/Contact";
@@ -23,6 +23,11 @@ import ExpertPool from "./components/peace-operations/ExpertPool.jsx";
 import PeaceKeepingOperations from "./components/peace-operations/PeaceKeepingOperations.jsx";
 import UnOperations from "./components/peace-operations/UnOperations.jsx";
 import PrinciplesOfPeaceking from "./components/peace-operations/PrinciplesOfPeaceking.jsx";
+import OurPeacekeepers from "./components/peace-operations/OurPeacekeepers.jsx";
+import EnvironmentalClimate from "./components/peace-operations/EnvironmentalClimate.jsx";
+import Greening from "./components/peace-operations/Greening.jsx";
+import LegalBasis from "./components/peace-operations/LegalBasis.jsx";
+import Sdgs from "./components/footer-links/Sdgs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -73,14 +78,14 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-  {
-    path: "/events",
-    element: (
-      <Layout>
-        <Events />
-      </Layout>
-    ),
-  },
+  // {
+  //   path: "/events",
+  //   element: (
+  //     <Layout>
+  //       <Events />
+  //     </Layout>
+  //   ),
+  // },
   {
     path: "/donate",
     element: (
@@ -138,6 +143,14 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "/principlesofpeacekeeping",
+    element: (
+      <Layout>
+        <PrinciplesOfPeaceking />
+      </Layout>
+    ),
+  },
+  {
     path: "/un-operations",
     element: (
       <Layout>
@@ -154,21 +167,32 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/principlesofpeacekeeping",
+    path: "/towards-environmental",
     element: (
       <Layout>
-        <PrinciplesOfPeaceking />
+        <EnvironmentalClimate />
       </Layout>
     ),
   },
   {
-    path: "/history",
+    path: "/greeningbluehelmets",
     element: (
       <Layout>
-        <History />
+        <Greening />
       </Layout>
     ),
   },
+
+  {
+    path: "/legalbasis",
+    element: (
+      <Layout>
+        <LegalBasis />
+      </Layout>
+    ),
+  },
+
+  
   {
     path: "/countries",
     element: (
@@ -182,6 +206,73 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Contact />
+      </Layout>
+    ),
+  },
+
+  //footer links
+
+  {
+    path: "/Sdgs",
+    element: (
+      <Layout>
+        <Sdgs />
+      </Layout>
+    ),
+  },
+  {
+    path: "/events",
+    element: (
+      <Layout>
+        <Sdgs />
+      </Layout>
+    ),
+  },
+  {
+    path: "/Sdgs",
+    element: (
+      <Layout>
+        <Sdgs />
+      </Layout>
+    ),
+  },
+  {
+    path: "/Sdgs",
+    element: (
+      <Layout>
+        <Sdgs />
+      </Layout>
+    ),
+  },
+  {
+    path: "/Sdgs",
+    element: (
+      <Layout>
+        <Sdgs />
+      </Layout>
+    ),
+  },
+  {
+    path: "/Sdgs",
+    element: (
+      <Layout>
+        <Sdgs />
+      </Layout>
+    ),
+  },
+  {
+    path: "/Sdgs",
+    element: (
+      <Layout>
+        <Sdgs />
+      </Layout>
+    ),
+  },
+  {
+    path: "/Sdgs",
+    element: (
+      <Layout>
+        <Sdgs />
       </Layout>
     ),
   },
