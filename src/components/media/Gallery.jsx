@@ -37,7 +37,7 @@ const Gallery = () => {
 
       {loading ? (
         <div className="flex justify-center items-center">
-          <FaSpinner className="animate-spin text-gray-500 text-4xl" />
+          <FaSpinner className="animate-spin text-yellow-500 text-4xl" />
         </div>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">

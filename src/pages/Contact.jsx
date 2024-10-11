@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import HeroAll from "../components/HeroAll";
-import slider_1 from "../assets/slider_1.jpg";
-import slider_2 from "../assets/slider_2.jpg";
-import slider_3 from "../assets/slider_3.jpg";
+import slider_1 from "../assets/spia-about.jpg";
 import ContactDetails from "../components/ContactDetails";
 import ContactFormMap from "../components/ContactFormMap";
 // import FAQ from "../components/FAQ";
@@ -24,7 +22,7 @@ const Contact = () => {
     fade: true,
     arrows: false,
   };
-  const images = [slider_1, slider_2, slider_3];
+  const images = [slider_1];
   return (
     <>
       <section className="relative h-96 w-full">
@@ -33,14 +31,14 @@ const Contact = () => {
           images={images}
           height="h-96"
           heading_1="Talk To Us Now"
-          text="Share your recommendation, concern or query with us"
+          text="We are Online 24/7"
         />
       </section>
       <ContactDetails />
       <ContactFormMap />
       {/* <FAQ /> */}
       <CTA />
-      <Testimonial />
+      {/* <Testimonial /> */}
     </>
   );
 };

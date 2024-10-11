@@ -41,7 +41,7 @@ const News = () => {
 
           {loading ? (
             <div className="flex justify-center items-center">
-              <FaSpinner className="animate-spin text-gray-500 text-4xl" />
+              <FaSpinner className="animate-spin text-yellow-500 text-4xl" />
             </div>
           ) : (
             <div className="-mx-4 flex flex-wrap">

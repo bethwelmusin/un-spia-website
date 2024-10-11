@@ -87,6 +87,70 @@ const History = () => {
         
                 </dl>
             </div>
+            <div className="bg-white-700 text-white py-16 px-4 lg:px-8">
+  <h2 className="text-3xl lg:text-4xl font-bold text-center text-yellow-500 mb-8 lg:mb-12">Our Core Values</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+    <div className="bg-white text-black rounded-lg shadow-lg p-6">
+      <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center">Integrity</h3>
+      <p className="text-sm lg:text-base mb-6 text-center">We are committed to honesty, transparency, and ethical behavior in all our actions and decisions. We are guided by values, principles, and behaviors and we consistently ensure that one’s actions align with our vision and mission.</p>
+      <div className="flex justify-center">
+        <span className="text-xl lg:text-2xl">→</span>
+      </div>
+    </div>
+
+    <div className="bg-white text-black rounded-lg shadow-lg p-6">
+      <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center">Humanity</h3>
+      <p className="text-sm lg:text-base mb-6 text-center">We advocate for social justice, supporting those in need, and prioritizing the well-being of others to make a positive impact on society and uplift those who may be marginalized or suffering.</p>
+      <div className="flex justify-center">
+        <span className="text-xl lg:text-2xl">→</span>
+      </div>
+    </div>
+
+    <div className="bg-white text-black rounded-lg shadow-lg p-6">
+      <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center">Humility</h3>
+      <p className="text-sm lg:text-base mb-6 text-center">We value collaboration, effective communication, and appreciate diverse perspectives, fostering a culture of trust and openness.</p>
+      <div className="flex justify-center">
+        <span className="text-xl lg:text-2xl">→</span>
+      </div>
+    </div>
+
+    <div className="bg-white text-black rounded-lg shadow-lg p-6">
+      <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center">Respect for Diversity</h3>
+      <p className="text-sm lg:text-base mb-6 text-center">We embrace various dimensions of diversity, such as race, ethnicity, gender, age, religion, abilities, and perspectives, creating an environment where everyone feels valued and accepted.</p>
+      <div className="flex justify-center">
+        <span className="text-xl lg:text-2xl">→</span>
+      </div>
+    </div>
+
+    <div className="bg-white text-black rounded-lg shadow-lg p-6">
+      <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center">Teamwork</h3>
+      <p className="text-sm lg:text-base mb-6 text-center">We believe that collective efforts lead to better outcomes, encouraging diverse skills and perspectives, open communication, and contribution from everyone.</p>
+      <div className="flex justify-center">
+        <span className="text-xl lg:text-2xl">→</span>
+      </div>
+    </div>
+
+    <div className="bg-white text-black rounded-lg shadow-lg p-6">
+      <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center">Impartiality</h3>
+      <p className="text-sm lg:text-base mb-6 text-center">We emphasize objectivity in decision-making, treating all individuals and situations fairly, without bias or favoritism.</p>
+      <div className="flex justify-center">
+        <span className="text-xl lg:text-2xl">→</span>
+      </div>
+    </div>
+
+    <div className="bg-white text-black rounded-lg shadow-lg p-6">
+      <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center">Innovation</h3>
+      <p className="text-sm lg:text-base mb-6 text-center">We promote creativity, forward-thinking, and a willingness to challenge the status quo, fostering an environment where experimentation is embraced.</p>
+      <div className="flex justify-center">
+        <span className="text-xl lg:text-2xl">→</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 
         </div>
     </div>

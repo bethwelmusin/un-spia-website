@@ -81,26 +81,27 @@ const Footer = () => {
           </img>
           UN Soldiers Of Peace Internation Association
         </h6>
-        <div className=' '>
-        <p className="mb-4 flex items-center">
-        <FaRegCalendarAlt className="text-white-500 dark:text-white-200 mr-2" />
-        <Link to="/events" className="text-white-500 dark:text-white-200 hover:text-yellow-500">
-          Upcoming Events
-        </Link>
-      </p>
-      <p className="mb-4 flex items-center">
-        <HiOutlineDotsHorizontal className="text-white-500 dark:text-white-200 mr-2" />
-        <Link to="/projects" className="text-white-500 dark:text-white-200 hover:text-yellow-500">
-          Ongoing Projects
-        </Link>
-      </p>
-      <p className="mb-4 flex items-center">
-        <MdOutlineVolunteerActivism className="text-white-500 dark:text-white-200 mr-2" />
-        <Link to="/volunteer" className="text-white-500 dark:text-white-200 hover:text-yellow-500">
-          Become a Volunteer
-        </Link>
-      </p>
-        </div>
+        <div className="flex flex-col items-center">
+  <p className="mb-4 flex items-center">
+    <FaRegCalendarAlt className="text-white-500 dark:text-white-200 mr-2" />
+    <Link to="/events" className="text-white-500 dark:text-white-200 hover:text-yellow-500">
+      Upcoming Events
+    </Link>
+  </p>
+  <p className="mb-4 flex items-center">
+    <HiOutlineDotsHorizontal className="text-white-500 dark:text-white-200 mr-2" />
+    <Link to="/projects" className="text-white-500 dark:text-white-200 hover:text-yellow-500">
+      Ongoing Projects
+    </Link>
+  </p>
+  <p className="mb-4 flex items-center">
+    <MdOutlineVolunteerActivism className="text-white-500 dark:text-white-200 mr-2" />
+    <Link to="/volunteer" className="text-white-500 dark:text-white-200 hover:text-yellow-500">
+      Become a Volunteer
+    </Link>
+  </p>
+</div>
+
       
       </div>
       <div className="">

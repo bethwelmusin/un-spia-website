@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import HeroAll from "../components/HeroAll";
-import slider_1 from "../assets/slider_1.jpg";
-import slider_2 from "../assets/slider_2.jpg";
-import slider_3 from "../assets/slider_3.jpg";
+import slider_1 from "../assets/contact-pic.jpg";
 import History from "../components/History";
 import Team from "../components/Team";
 import CTA from "../components/CTA";
@@ -25,7 +23,7 @@ const About = () => {
     arrows: false,
   };
 
-  const images = [slider_1, slider_2, slider_3];
+  const images = [slider_1];
   return (
     <>
       <section className="relative h-96 w-full">

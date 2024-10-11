@@ -13,6 +13,7 @@ import AboutHome from "./pages/AboutHome";
 const App = () => {
   return (
     <>
+    
       <HomeHero />
       <Feature />
       <AboutHome />
