@@ -93,7 +93,7 @@ const History = () => {
 
     <div className="bg-white text-black rounded-lg shadow-lg p-6">
       <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center">Integrity</h3>
-      <p className="text-sm lg:text-base mb-6 text-center">We are committed to honesty, transparency, and ethical behavior in all our actions and decisions. We are guided by values, principles, and behaviors and we consistently ensure that one’s actions align with our vision and mission.</p>
+      <p className="text-sm lg:text-base mb-6 text-center">We are committed to honesty, transparency, and ethical behavior in all our actions and decisions. We are guided by values, principles, and behaviors and we consistently ensure that our actions align with our vision and mission.</p>
       <div className="flex justify-center">
         <span className="text-xl lg:text-2xl">→</span>
       </div>
@@ -141,7 +141,7 @@ const History = () => {
 
     <div className="bg-white text-black rounded-lg shadow-lg p-6">
       <h3 className="text-lg lg:text-xl font-semibold mb-4 text-center">Innovation</h3>
-      <p className="text-sm lg:text-base mb-6 text-center">We promote creativity, forward-thinking, and a willingness to challenge the status quo, fostering an environment where experimentation is embraced.</p>
+      <p className="text-sm lg:text-base mb-6 text-center">We promote creativity, forward-thinking, and  willingness to challenge the status quo, fostering an environment where experimentation is embraced.</p>
       <div className="flex justify-center">
         <span className="text-xl lg:text-2xl">→</span>
       </div>

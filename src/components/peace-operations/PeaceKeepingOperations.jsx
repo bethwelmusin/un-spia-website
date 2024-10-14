@@ -34,7 +34,9 @@ const PeaceKeepingOperations = () => {
                 UN Peacekeeping is guided by three basic principles:
               </p>
               <p>
-                1.Consent of the parties; 2. Impartiality; 3. Non-use of force
+                 <span className="font-bold">1.Consent of the parties;</span> <br></br> 
+                 <span className="font-bold"> 2. Impartiality;</span><br></br>
+                   <span className="font-bold"> 3. Non-use of force</span> <br></br>
                 except in self-defence and defence of the mandate. Peacekeeping
                 is flexible and over the past two decades has been deployed in
                 many configurations. There are currently 11 UN peacekeeping

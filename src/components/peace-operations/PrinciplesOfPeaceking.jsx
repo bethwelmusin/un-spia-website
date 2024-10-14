@@ -29,7 +29,7 @@ const PrinciplesOfPeaceking = () => {
                 reinforcing: Consent of the parties Impartiality Non-use of
                 force except in self-defence and defence of the mandate
               </p>
-              <p className="font-bold">Consent of the parties</p>
+              <p className="font-bold">Consent of the parties</p><br></br>
 
               <p>
                 UN peacekeeping operations are deployed with the consent of the
