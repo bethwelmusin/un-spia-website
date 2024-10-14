@@ -10,6 +10,7 @@ import AboutHome from "./pages/AboutHome";
 
 
 
+
 const App = () => {
   return (
     <>
@@ -20,7 +21,6 @@ const App = () => {
       <CTA />
       <Stats />
       <News />
-      {/* <Testimonial /> */}
       
 
 

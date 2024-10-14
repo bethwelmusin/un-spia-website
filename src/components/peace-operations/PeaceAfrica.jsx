@@ -10,7 +10,7 @@ const PeaceAfrica = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Main Content Card */}
         <div className="col-span-2 bg-white shadow-md rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-4">International Day of Peacekeepers</h2>
+          <h2 className="text-2xl font-bold mb-4">The Role Of PeaceKeeping</h2>
           <div className="space-y-4">
 
           <h4>The Role Of PeaceKeeping

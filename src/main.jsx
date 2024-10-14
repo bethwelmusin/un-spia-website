@@ -32,6 +32,7 @@ import Events from "./components/footer-links/Events.jsx";
 import Terms from "./components/footer-links/Terms.jsx";
 import PrivacyPolicy from "./components/footer-links/PrivacyPolicy.jsx";
 import FraudAlert from "./components/footer-links/FraudAlert.jsx";
+import PeaceAfrica from "./components/peace-operations/PeaceAfrica.jsx";
 
 const router = createBrowserRouter([
   {
@@ -159,7 +160,7 @@ const router = createBrowserRouter([
     path: "/roleofpeacekeeping",
     element: (
       <Layout>
-        <PeaceKeepingOperations />
+        <PeaceAfrica />
       </Layout>
     ),
   },

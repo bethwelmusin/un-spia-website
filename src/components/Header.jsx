@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/newlogo.png";
-
 export const NavBar = ({ handleMobileMenu }) => {
   return (
     <>
@@ -243,13 +242,13 @@ const Header = () => {
             </div>
 
             {/* Language Switcher */}
-            <div>
+           
               <select className="bg-white border border-gray-300 text-gray-600 text-sm rounded-md p-1">
                 <option value="en">EN</option>
                 <option value="fr">FR</option>
                 <option value="es">ES</option>
               </select>
-            </div>
+
           </div>
         </div>
       </div>

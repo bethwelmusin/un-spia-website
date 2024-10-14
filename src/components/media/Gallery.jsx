@@ -25,7 +25,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="px-4">
+    <div className="px-2">
       <div className="flex items-center justify-center py-4 md:py-8 flex-wrap">
         <button
           type="button"
@@ -40,16 +40,16 @@ const Gallery = () => {
           <FaSpinner className="animate-spin text-yellow-500 text-4xl" />
         </div>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {images.map((image) => (
             <div key={image.id}>
               <img
                 // className="h-auto max-w-full rounded-lg"
-                className="w-full h-60 object-contain rounded-lg" 
+                className="w-full h-48 object-cover rounded-lg md:h-60 lg:h-72"
                 src={image.image}
                 alt={image.title}
               />
-              <h3 className="text-sm text-center font-sm mt-2">{image.title}</h3>
+              <h3 className="text-sm text-center font-sm">{image.title}</h3>
             </div>
           ))}
         </div>

@@ -24,7 +24,7 @@ const News = () => {
 
   return (
     <>
-      <section className="bg-white pb-10 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+      <section className="bg-white pb-10 dark:bg-dark lg:pb-2 lg:pt-[4px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
