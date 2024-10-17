@@ -214,7 +214,8 @@ const Header = () => {
             {/* Social Media Links */}
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/story.php?story_fbid=122094050708571119&id=61567133572338&rdid=7vfARfsn9VHYnT5Z"
+                target="blank"
                 className="text-gray-600 hover:text-gray-900"
               >
                 <svg

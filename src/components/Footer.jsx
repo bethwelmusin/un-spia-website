@@ -20,7 +20,7 @@ const Footer = () => {
         <span>Get connected with us on social networks:</span>
       </div>
       <div className="flex justify-center">
-        <a href="#!" className="me-6 text-gray-500 dark:text-gray-200">
+        <a href="https://www.facebook.com/story.php?story_fbid=122094050708571119&id=61567133572338&rdid=7vfARfsn9VHYnT5Z" className="me-6 text-gray-500 dark:text-gray-200" target='blank' >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4"
