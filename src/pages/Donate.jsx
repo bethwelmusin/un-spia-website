@@ -33,7 +33,7 @@ const Donate = () => {
   const images = [slider_1, slider_2, slider_3];
   return (
     <>
-      <section className="relative h-96 w-full">
+      {/* <section className="relative h-96 w-full">
         <HeroAll
           settings={settings}
           images={images}
@@ -41,7 +41,7 @@ const Donate = () => {
           heading_1="Support The Cause"
           text="Your financial support comes in handy"
         />
-      </section>
+      </section> */}
       <DonateForm />
     </>
   );

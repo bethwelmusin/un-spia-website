@@ -214,7 +214,7 @@ const Header = () => {
             {/* Social Media Links */}
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/story.php?story_fbid=122094050708571119&id=61567133572338&rdid=7vfARfsn9VHYnT5Z"
+                href="https://web.facebook.com/profile.php?id=61567133572338"
                 target="blank"
                 className="text-gray-600 hover:text-gray-900"
               >
@@ -285,7 +285,11 @@ const Header = () => {
               About
             </Link>
             <div className="relative group">
-              <button className="text-gray-600 hover:text-yellow-500 flex items-center">
+              <button className="text-gray-600 hover:text-yellow-500 flex items-center"
+
+              onClick={handleToggle}
+              
+              >
                 Peace Operations
                 <svg
                   className="w-4 h-4 ml-1"
@@ -380,7 +384,11 @@ const Header = () => {
               </div>
             </div>
             <div className="relative group">
-              <button className="text-gray-600 hover:text-yellow-500 flex items-center">
+              <button className="text-gray-600 hover:text-yellow-500 flex items-center"
+
+              onClick={handleToggle}
+              
+              >
                 News & Media
                 <svg
                   className="w-4 h-4 ml-1"
