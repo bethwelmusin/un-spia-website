@@ -136,6 +136,14 @@ const Footer = () => {
             >Upcoming Events</Link>
         </p>
         <p className="mb-4">
+          <Link  to="/peacekeepers" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500 "
+            >PeaceKeepers</Link >
+        </p>
+        <p className="mb-4">
+          <Link  to="/futuresummits" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500 "
+            >Future Summits</Link >
+        </p>
+        <p className="mb-4">
           <Link  to="/Sdgs" className="text-gray-500 dark:text-neutral-200 hover:text-yellow-500 "
             >Sustainable Development Goals</Link >
         </p>

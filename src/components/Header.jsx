@@ -1,4 +1,4 @@
-import { useState, useRef , useEffect} from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/newlogo.png";
 export const NavBar = ({ handleMobileMenu }) => {
@@ -179,8 +179,7 @@ const Header = () => {
     setShowMobileMenu(!showMobileMenu);
   };
 
-
-    const [isPeaceDropdownOpen, setIsPeaceDropdownOpen] = useState(false);
+  const [isPeaceDropdownOpen, setIsPeaceDropdownOpen] = useState(false);
   const [isNewsDropdownOpen, setIsNewsDropdownOpen] = useState(false);
 
   const peaceDropdownRef = useRef(null);
@@ -188,23 +187,28 @@ const Header = () => {
 
   // Function to close dropdowns when clicked outside
   const handleClickOutside = (event) => {
-    if (peaceDropdownRef.current && !peaceDropdownRef.current.contains(event.target)) {
+    if (
+      peaceDropdownRef.current &&
+      !peaceDropdownRef.current.contains(event.target)
+    ) {
       setIsPeaceDropdownOpen(false);
     }
-    if (newsDropdownRef.current && !newsDropdownRef.current.contains(event.target)) {
+    if (
+      newsDropdownRef.current &&
+      !newsDropdownRef.current.contains(event.target)
+    ) {
       setIsNewsDropdownOpen(false);
     }
   };
 
   useEffect(() => {
     // Add event listener to detect clicks outside
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
       // Cleanup event listener
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-lg">
@@ -263,13 +267,12 @@ const Header = () => {
             </div>
 
             {/* Language Switcher */}
-           
-              <select className="bg-white border border-gray-300 text-gray-600 text-sm rounded-md p-1">
-                <option value="en">EN</option>
-                <option value="fr">FR</option>
-                <option value="es">ES</option>
-              </select>
 
+            <select className="bg-white border border-gray-300 text-gray-600 text-sm rounded-md p-1">
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+              <option value="es">ES</option>
+            </select>
           </div>
         </div>
       </div>
@@ -305,308 +308,302 @@ const Header = () => {
               About
             </Link>
 
-      {/* Peace Operations Dropdown */}
-      <div
-        className="relative"
-        onMouseEnter={() => setIsPeaceDropdownOpen(true)}
-        onMouseLeave={() => setIsPeaceDropdownOpen(false)}
-        ref={peaceDropdownRef}
-      >
-        <button
-          className="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none"
-        >
-          Peace Operations
-          <svg
-            className="w-4 h-4 ml-1"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-
-        {isPeaceDropdownOpen && (
-          <div className="absolute flex flex-col bg-white shadow-lg mt-2 py-2 w-80 opacity-100 transition-all duration-200 ease-in-out z-20">
-            <a
-      href="/history"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      History - International Day Of Peace Keepers
-    </a>
-    <a
-      href="/peaceful-connections"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Empowering Peaceful Connections Program
-    </a>
-    <a
-      href="/peaceful-connections-rwanda"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Empowering Peaceful Connections Program in Rwanda
-    </a>
-    <a
-      href="/expert-pool-civilian"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Expert Pool for Civilian Peacebuilding
-    </a>
-    <a
-      href="/peacekeepingoperations"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Peace Keeping Operations
-    </a>
-    <a
-      href="/un-operations"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      UN Operations
-    </a>
-    <a
-      href="/roleofpeacekeeping"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      The Role of Peacekeeping
-    </a>
-    <a
-      href="/principlesofpeacekeeping"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Principles of Peacekeeping
-    </a>
-    <a
-      href="/ourPeacekeepers"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Our Peacekeepers
-    </a>
-    <a
-      href="/towards-environmental"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Environmental and Climate-Sensitive Approach
-    </a>
-    <a
-      href="/greeningbluehelmets"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Greening the Blue Helmets
-    </a>
-    <a
-      href="/legalbasis"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Legal Basis
-    </a>
-          </div>
-        )}
-      </div>
-
-{/* 
-<div class="relative group">
-  <button
-    class="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none"
-    aria-expanded="false"
-  >
-    Peace Operations
-    <svg
-      class="w-4 h-4 ml-1"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M19 9l-7 7-7-7"
-      />
-    </svg>
-  </button>
-
-  <div
-    class="absolute hidden group-hover:flex flex-col bg-white shadow-lg mt-2 py-2 w-80 opacity-100 transition-all duration-200 ease-in-out z-10"
-  >
-    <a
-      href="/history"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      History - International Day Of Peace Keepers
-    </a>
-    <a
-      href="/peaceful-connections"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Empowering Peaceful Connections Program
-    </a>
-    <a
-      href="/peaceful-connections-rwanda"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Empowering Peaceful Connections Program in Rwanda
-    </a>
-    <a
-      href="/expert-pool-civilian"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Expert Pool for Civilian Peacebuilding
-    </a>
-    <a
-      href="/peacekeepingoperations"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Peace Keeping Operations
-    </a>
-    <a
-      href="/un-operations"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      UN Operations
-    </a>
-    <a
-      href="/roleofpeacekeeping"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      The Role of Peacekeeping
-    </a>
-    <a
-      href="/principlesofpeacekeeping"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Principles of Peacekeeping
-    </a>
-    <a
-      href="/ourPeacekeepers"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Our Peacekeepers
-    </a>
-    <a
-      href="/towards-environmental"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Environmental and Climate-Sensitive Approach
-    </a>
-    <a
-      href="/greeningbluehelmets"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Greening the Blue Helmets
-    </a>
-    <a
-      href="/legalbasis"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Legal Basis
-    </a>
-  </div>
-</div> */}
-
-{/* <div class="relative group">
-  <button
-    class="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none"
-  >
-    News & Media
-    <svg
-      class="w-4 h-4 ml-1"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M19 9l-7 7-7-7"
-      />
-    </svg>
-  </button>
-
-  <div
-    class="absolute hidden group-hover:flex flex-col bg-white shadow-lg mt-2 py-2 w-48 opacity-100 transition-all duration-200 ease-in-out z-10"
-  >
-    <a
-      href="/stories"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      UN-PeaceKeeping Stories
-    </a>
-    <a
-      href="/gallery"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Gallery
-    </a>
-    <a
-      href="/news"
-      class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-    >
-      Latest News
-    </a>
-  </div>
-</div> */}
-
-  <div
-        className="relative"
-        onMouseEnter={() => setIsNewsDropdownOpen(true)}
-        onMouseLeave={() => setIsNewsDropdownOpen(false)}
-        ref={newsDropdownRef}
-      >
-        <button
-          className="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none"
-        >
-          News & Media
-          <svg
-            className="w-4 h-4 ml-1"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-
-        {isNewsDropdownOpen && (
-          <div className="absolute flex flex-col bg-white shadow-lg mt-2 py-2 w-48 opacity-100 transition-all duration-200 ease-in-out z-20">
-            <a
-              href="/stories"
-              className="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+            {/* Peace Operations Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsPeaceDropdownOpen(true)}
+              onMouseLeave={() => setIsPeaceDropdownOpen(false)}
+              ref={peaceDropdownRef}
             >
-              UN-PeaceKeeping Stories
-            </a>
-            <a
-              href="/gallery"
-              className="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-            >
-              Gallery
-            </a>
-            <a
-              href="/news"
-              className="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
-            >
-              Latest News
-            </a>
-          </div>
-        )}
-      </div>
+              <button className="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none">
+                Peace Operations
+                <svg
+                  className="w-4 h-4 ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
 
+              {isPeaceDropdownOpen && (
+                <div className="absolute flex flex-col bg-white shadow-lg mt-2 py-2 w-80 opacity-100 transition-all duration-200 ease-in-out z-20">
+                  <a
+                    href="/history"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    History - International Day Of Peace Keepers
+                  </a>
+                  <a
+                    href="/peaceful-connections"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Empowering Peaceful Connections Program
+                  </a>
+                  <a
+                    href="/peaceful-connections-rwanda"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Empowering Peaceful Connections Program in Rwanda
+                  </a>
+                  <a
+                    href="/expert-pool-civilian"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Expert Pool for Civilian Peacebuilding
+                  </a>
+                  <a
+                    href="/peacekeepingoperations"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Peace Keeping Operations
+                  </a>
+                  <a
+                    href="/un-operations"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    UN Operations
+                  </a>
+                  <a
+                    href="/roleofpeacekeeping"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    The Role of Peacekeeping
+                  </a>
+                  <a
+                    href="/principlesofpeacekeeping"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Principles of Peacekeeping
+                  </a>
+                  <a
+                    href="/ourPeacekeepers"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Our Peacekeepers
+                  </a>
+                  <a
+                    href="/towards-environmental"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Environmental and Climate-Sensitive Approach
+                  </a>
+                  <a
+                    href="/greeningbluehelmets"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Greening the Blue Helmets
+                  </a>
+                  <a
+                    href="/legalbasis"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Legal Basis
+                  </a>
+                </div>
+              )}
+            </div>
 
+                      {/* 
+          <div class="relative group">
+            <button
+              class="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none"
+              aria-expanded="false"
+            >
+              Peace Operations
+              <svg
+                class="w-4 h-4 ml-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div
+              class="absolute hidden group-hover:flex flex-col bg-white shadow-lg mt-2 py-2 w-80 opacity-100 transition-all duration-200 ease-in-out z-10"
+            >
+              <a
+                href="/history"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                History - International Day Of Peace Keepers
+              </a>
+              <a
+                href="/peaceful-connections"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Empowering Peaceful Connections Program
+              </a>
+              <a
+                href="/peaceful-connections-rwanda"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Empowering Peaceful Connections Program in Rwanda
+              </a>
+              <a
+                href="/expert-pool-civilian"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Expert Pool for Civilian Peacebuilding
+              </a>
+              <a
+                href="/peacekeepingoperations"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Peace Keeping Operations
+              </a>
+              <a
+                href="/un-operations"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                UN Operations
+              </a>
+              <a
+                href="/roleofpeacekeeping"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                The Role of Peacekeeping
+              </a>
+              <a
+                href="/principlesofpeacekeeping"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Principles of Peacekeeping
+              </a>
+              <a
+                href="/ourPeacekeepers"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Our Peacekeepers
+              </a>
+              <a
+                href="/towards-environmental"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Environmental and Climate-Sensitive Approach
+              </a>
+              <a
+                href="/greeningbluehelmets"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Greening the Blue Helmets
+              </a>
+              <a
+                href="/legalbasis"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Legal Basis
+              </a>
+            </div>
+          </div> */}
+
+                      {/* <div class="relative group">
+            <button
+              class="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none"
+            >
+              News & Media
+              <svg
+                class="w-4 h-4 ml-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div
+              class="absolute hidden group-hover:flex flex-col bg-white shadow-lg mt-2 py-2 w-48 opacity-100 transition-all duration-200 ease-in-out z-10"
+            >
+              <a
+                href="/stories"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                UN-PeaceKeeping Stories
+              </a>
+              <a
+                href="/gallery"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Gallery
+              </a>
+              <a
+                href="/news"
+                class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+              >
+                Latest News
+              </a>
+            </div>
+          </div> */}
+
+            <div
+              className="relative"
+              onMouseEnter={() => setIsNewsDropdownOpen(true)}
+              onMouseLeave={() => setIsNewsDropdownOpen(false)}
+              ref={newsDropdownRef}
+            >
+              <button className="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none">
+                News & Media
+                <svg
+                  className="w-4 h-4 ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              {isNewsDropdownOpen && (
+                <div className="absolute flex flex-col bg-white shadow-lg mt-2 py-2 w-48 opacity-100 transition-all duration-200 ease-in-out z-20">
+                  <a
+                    href="/stories"
+                    className="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    UN-PeaceKeeping Stories
+                  </a>
+                  <a
+                    href="/gallery"
+                    className="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Gallery
+                  </a>
+                  <a
+                    href="/news"
+                    className="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                    Latest News
+                  </a>
+                </div>
+              )}
+            </div>
 
             <Link
               to="/countries"
@@ -656,9 +653,9 @@ const Header = () => {
             </button>
           </div>
         </div>
-
         {/* Mobile Dropdown Menu */}
-        {showMobileMenu && <NavBar handleMobileMenu={handleMobileMenu} />}      </div>
+        {showMobileMenu && <NavBar handleMobileMenu={handleMobileMenu} />}{" "}
+      </div>
     </header>
   );
 };
