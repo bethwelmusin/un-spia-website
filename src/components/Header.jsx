@@ -329,7 +329,6 @@ const Header = () => {
             <div
               className="relative"
               onMouseEnter={() => setIsPeaceDropdownOpen(true)}
-              onMouseLeave={() => setIsPeaceDropdownOpen(false)}
               ref={peaceDropdownRef}
             >
               <button className="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none">
@@ -577,7 +576,6 @@ const Header = () => {
             <div
               className="relative"
               onMouseEnter={() => setIsNewsDropdownOpen(true)}
-              onMouseLeave={() => setIsNewsDropdownOpen(false)}
               ref={newsDropdownRef}
             >
               <button
