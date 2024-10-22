@@ -210,6 +210,23 @@ const Header = () => {
     };
   }, []);
 
+  const handleDropdownToggle = () => {
+    setIsPeaceDropdownOpen(!isPeaceDropdownOpen);
+  };
+
+  const handleLinkClick = () => {
+    setIsPeaceDropdownOpen(false);
+  };
+
+  useEffect(() => {
+    // Add event listener to detect clicks outside
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Cleanup event listener
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow-lg">
       {/* First Navbar Layer - Details, Social Media, Contact Info */}
@@ -411,7 +428,7 @@ const Header = () => {
               )}
             </div>
 
-                      {/* 
+            {/* 
           <div class="relative group">
             <button
               class="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none"
@@ -512,7 +529,7 @@ const Header = () => {
             </div>
           </div> */}
 
-                      {/* <div class="relative group">
+            {/* <div class="relative group">
             <button
               class="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none"
             >
@@ -563,7 +580,11 @@ const Header = () => {
               onMouseLeave={() => setIsNewsDropdownOpen(false)}
               ref={newsDropdownRef}
             >
-              <button className="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none">
+              <button
+                className="text-gray-600 hover:text-yellow-500 flex items-center focus:outline-none"
+                aria-haspopup="true"
+                aria-expanded={isNewsDropdownOpen}
+              >
                 News & Media
                 <svg
                   className="w-4 h-4 ml-1"
