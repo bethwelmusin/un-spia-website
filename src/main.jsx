@@ -35,6 +35,7 @@ import FraudAlert from "./components/footer-links/FraudAlert.jsx";
 import PeaceAfrica from "./components/peace-operations/PeaceAfrica.jsx";
 import Veterans from "./pages/Veterans.jsx";
 import FutureSummit from "./pages/FutureSummit.jsx";
+import WhoWeAre from "./components/peace-operations/WhoWeAre.jsx";
 
 const router = createBrowserRouter([
   {
@@ -196,6 +197,16 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <LegalBasis />
+      </Layout>
+    ),
+  },
+  
+
+  {
+    path: "/UN-Peacekeepers",
+    element: (
+      <Layout>
+        <WhoWeAre />
       </Layout>
     ),
   },

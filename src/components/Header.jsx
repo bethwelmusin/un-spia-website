@@ -351,6 +351,12 @@ const Header = () => {
 
               {isPeaceDropdownOpen && (
                 <div className="absolute flex flex-col bg-white shadow-lg mt-2 py-2 w-80 opacity-100 transition-all duration-200 ease-in-out z-20">
+                   <a
+                    href="/UN-Peacekeepers"
+                    class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
+                  >
+                      We Are United Nations Peacekeepers
+                  </a>
                   <a
                     href="/history"
                     class="block px-4 py-2 text-gray-600 hover:bg-yellow-500 hover:text-white transition-colors duration-200"
